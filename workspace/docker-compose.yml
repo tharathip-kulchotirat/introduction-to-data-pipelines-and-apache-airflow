@@ -37,6 +37,8 @@ x-airflow-common:
     airflow-metastore:
       condition: service_healthy
 
+
+
 services:
   airflow-metastore:
     image: postgres:13

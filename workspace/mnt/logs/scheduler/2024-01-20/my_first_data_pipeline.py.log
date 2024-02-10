@@ -1,0 +1,19 @@
+[2024-01-20T05:10:54.074+0000] {processor.py:161} INFO - Started process (PID=694) to work on /opt/airflow/dags/my_first_data_pipeline.py
+[2024-01-20T05:10:54.076+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_first_data_pipeline.py for tasks to queue
+[2024-01-20T05:10:54.080+0000] {logging_mixin.py:188} INFO - [2024-01-20T05:10:54.079+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_data_pipeline.py
+[2024-01-20T05:10:54.104+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/my_first_data_pipeline.py
+[2024-01-20T05:10:54.136+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_first_data_pipeline.py took 0.071 seconds
+[2024-01-20T05:10:57.153+0000] {processor.py:161} INFO - Started process (PID=710) to work on /opt/airflow/dags/my_first_data_pipeline.py
+[2024-01-20T05:10:57.155+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/my_first_data_pipeline.py for tasks to queue
+[2024-01-20T05:10:57.159+0000] {logging_mixin.py:188} INFO - [2024-01-20T05:10:57.158+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/my_first_data_pipeline.py
+[2024-01-20T05:10:57.188+0000] {logging_mixin.py:188} INFO - [2024-01-20T05:10:57.183+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/my_first_data_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/my_first_data_pipeline.py", line 49, in <module>
+    python_callable=_get_dog_images,
+NameError: name '_get_dog_images' is not defined
+[2024-01-20T05:10:57.190+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/my_first_data_pipeline.py
+[2024-01-20T05:10:57.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/my_first_data_pipeline.py took 0.094 seconds

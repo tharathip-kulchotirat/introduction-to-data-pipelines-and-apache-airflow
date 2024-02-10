@@ -1,6 +1,7 @@
 import json
 
 import requests
+from uuid import uuid4
 
 
 if __name__ == "__main__":
@@ -20,8 +21,9 @@ if __name__ == "__main__":
     api_url = "https://api.jsonbin.io/v3/b"
     headers = {
         "Content-Type": "application/json",
-        "X-Master-Key": "YOUR_X_MASTER_KEY",
-        "X-Collection-Id": "YOUR_COLLECTION_ID",
+        "X-Master-Key": "$2a$10$RJPgyzi4u9CwJ3KglyuhxOBGFS5dQKh5SZv9ZQzV2BKlOlajnqmwG",
+        "X-Collection-Id": "65ab4466266cfc3fde7c6f31",
+        "X-Bin-Name": f"dogs_{uuid4()}",
     }
 
     # Read data from file

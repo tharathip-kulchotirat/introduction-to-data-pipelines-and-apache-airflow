@@ -1,0 +1,15 @@
+[2024-01-20T05:22:45.313+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dog_api_pipeline.get_dog_images manual__2024-01-20T05:22:43.003589+00:00 [queued]>
+[2024-01-20T05:22:45.372+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dog_api_pipeline.get_dog_images manual__2024-01-20T05:22:43.003589+00:00 [queued]>
+[2024-01-20T05:22:45.374+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 1
+[2024-01-20T05:22:45.443+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): get_dog_images> on 2024-01-20 05:22:43.003589+00:00
+[2024-01-20T05:22:45.453+0000] {standard_task_runner.py:60} INFO - Started process 1290 to run task
+[2024-01-20T05:22:45.463+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'dog_api_pipeline', 'get_dog_images', 'manual__2024-01-20T05:22:43.003589+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/dog_api_pipeline.py', '--cfg-path', '/tmp/tmpxz9zw2ak']
+[2024-01-20T05:22:45.472+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask get_dog_images
+[2024-01-20T05:22:45.606+0000] {task_command.py:423} INFO - Running <TaskInstance: dog_api_pipeline.get_dog_images manual__2024-01-20T05:22:43.003589+00:00 [running]> on host 68c8327b56d3
+[2024-01-20T05:22:45.876+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dog_api_pipeline' AIRFLOW_CTX_TASK_ID='get_dog_images' AIRFLOW_CTX_EXECUTION_DATE='2024-01-20T05:22:43.003589+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-01-20T05:22:43.003589+00:00'
+[2024-01-20T05:22:47.076+0000] {logging_mixin.py:188} INFO - {'message': 'https://images.dog.ceo/breeds/cotondetulear/100_2397.jpg', 'status': 'success'}
+[2024-01-20T05:22:47.554+0000] {logging_mixin.py:188} INFO - {'record': {'message': 'https://images.dog.ceo/breeds/cotondetulear/100_2397.jpg', 'status': 'success'}, 'metadata': {'id': '65ab58a7266cfc3fde7c7c1d', 'createdAt': '2024-01-20T05:22:47.597Z', 'private': True, 'name': 'dogs_ffdcc340-84e8-47de-bad2-aed77aefcd59', 'collectionId': '65ab4466266cfc3fde7c6f31'}}
+[2024-01-20T05:22:47.561+0000] {python.py:201} INFO - Done. Returned value was: None
+[2024-01-20T05:22:47.588+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=dog_api_pipeline, task_id=get_dog_images, execution_date=20240120T052243, start_date=20240120T052245, end_date=20240120T052247
+[2024-01-20T05:22:47.637+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-01-20T05:22:47.692+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
