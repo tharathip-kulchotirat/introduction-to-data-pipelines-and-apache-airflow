@@ -198,11 +198,12 @@ services:
   #     airflow-init:
   #       condition: service_completed_successfully
 
-  # mailhog:
-  #   image: mailhog/mailhog
-  #   ports:
-  #     - 1025:1025
-  #     - 8025:8025
+  # Email test server
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 1025:1025
+      - 8025:8025
 
 volumes:
   airflow-metastore-data-volume:
