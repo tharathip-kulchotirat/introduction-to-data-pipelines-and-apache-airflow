@@ -1,0 +1,31 @@
+[0m03:56:15.463243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff755c6dea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7547ff9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff7547ffb20>]}
+
+
+============================== 03:56:15.481960 | 52d3e6ca-e13c-42eb-ad21-d1ab70408142 ==============================
+[0m03:56:15.481960 [info ] [MainThread]: Running with dbt=1.7.9
+[0m03:56:15.483000 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/codespace/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m03:56:15.483780 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/codespace/.dbt')}
+[0m03:56:15.484562 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m03:56:28.788795 [debug] [MainThread]: Starter project path: /home/codespace/.cache/pypoetry/virtualenvs/weather-1CS2JGND-py3.10/lib/python3.10/site-packages/dbt/include/starter_project
+[0m03:56:28.795163 [info ] [MainThread]: 
+Your new dbt project "play_with_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m03:56:28.796693 [info ] [MainThread]: Setting up your profile.
+[0m04:00:33.659837 [info ] [MainThread]: Profile play_with_dbt written to /home/codespace/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m04:00:33.661587 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 258.20288, "process_user_time": 5.700883, "process_kernel_time": 0.578293, "process_mem_max_rss": "94024", "process_in_blocks": "1688", "process_out_blocks": "22616"}
+[0m04:00:33.662524 [debug] [MainThread]: Command `dbt init` succeeded at 04:00:33.662291 after 258.20 seconds
+[0m04:00:33.663215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff755c6dea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff754943bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff754942140>]}
+[0m04:00:33.664102 [debug] [MainThread]: Flushing usage events

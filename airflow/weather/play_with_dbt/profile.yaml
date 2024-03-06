@@ -1,0 +1,12 @@
+play_with_dbt:
+  outputs:
+    dev:
+      dbname: postgres
+      host: localhost
+      pass: postgres
+      port: 5432
+      schema: dbt_kuang
+      threads: 1
+      type: postgres
+      user: postgres
+  target: dev
